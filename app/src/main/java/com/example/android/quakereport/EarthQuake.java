@@ -7,11 +7,13 @@ class EarthQuake {
     private Double mMagnitude;
     private String mLocation;
     private String mDate;
+    private String mUrl;
 
-    EarthQuake(Double mMagnitude, String mLocation, String mDate) {
+    EarthQuake(Double mMagnitude, String mLocation, String mDate, String mUrl) {
         this.mMagnitude = mMagnitude;
         this.mLocation = mLocation;
         this.mDate = mDate;
+        this.mUrl = mUrl;
     }
 
     String getmMagnitudeFormatted() {
@@ -30,5 +32,9 @@ class EarthQuake {
 
     String getmLocation() {
         return mLocation;
+    }
+
+    public String getmUrl() {
+        return mUrl;
     }
 }

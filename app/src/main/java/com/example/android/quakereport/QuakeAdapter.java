@@ -48,7 +48,7 @@ public class QuakeAdapter extends ArrayAdapter<EarthQuake> {
         EarthQuake currentQuake = getItem(position);
 
         // Find the view in the list_item.xml layout with the ID
-        TextView magnitudeTextView = (TextView) listItemView.findViewById(R.id.magnitud_tv);
+        TextView magnitudeTextView = listItemView.findViewById(R.id.magnitud_tv);
         TextView locationDistanceTextView = listItemView.findViewById(R.id.distance_tv);
         TextView locationTextView = listItemView.findViewById(R.id.location_tv);
         TextView dateTextView = listItemView.findViewById(R.id.date_tv);
